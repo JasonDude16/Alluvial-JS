@@ -1,0 +1,164 @@
+{
+  "flows": [
+    {
+      "magnitude": 10,
+      "path": [
+        [0, 0, 1],
+        [1, 0, 2],
+        [2, 0, 0]
+      ]
+    },
+    {
+      "magnitude": 5,
+      "path": [
+        [0, 0, 3],
+        [1, 0, 4],
+        [2, 0, 2]
+      ]
+    },
+    {
+      "magnitude": 3,
+      "path": [
+        [0, 0, 1],
+        [1, 0, 2],
+        [2, 0, 1]
+      ]
+    },
+    {
+      "magnitude": 12,
+      "path": [
+        [0, 0, 4],
+        [1, 0, 1],
+        [2, 0, 3]
+      ]
+    },
+    {
+      "magnitude": 6,
+      "path": [
+        [0, 0, 2],
+        [1, 0, 1],
+        [2, 0, 3]
+      ]
+    },
+    {
+      "magnitude": 8,
+      "path": [
+        [0, 0, 3],
+        [1, 0, 1],
+        [2, 0, 2]
+      ]
+    },
+    {
+      "magnitude": 5,
+      "path": [
+        [0, 0, 2],
+        [1, 0, 1],
+        [2, 0, 3]
+      ]
+    },
+    {
+      "magnitude": 10,
+      "path": [
+        [0, 0, 3],
+        [1, 0, 1],
+        [2, 0, 1]
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "title": "Start A",
+              "color": "#2b84ad"
+            },
+            {
+              "title": "Start B",
+              "color": "#419c33"
+            },
+            {
+              "title": "Start C",
+              "color": "#873ac9"
+            },
+            {
+              "title": "Start D",
+              "color": "#d48728"
+            },
+            {
+              "title": "Start E",
+              "color": "#bf3821"
+            }
+          ],
+          "label": -1
+        }
+      ],
+      "title": "Baseline",
+      "x": 0.0
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "title": "Middle A",
+              "color": "#419c33"
+            },
+            {
+              "title": "Middle B",
+              "color": "#873ac9"
+            },
+            {
+              "title": "Middle C",
+              "color": "#d48728"
+            },
+            {
+              "title": "Middle D",
+              "color": "#bf3821"
+            },
+            {
+              "title": "Middle E",
+              "color": "#bf3821"
+            }
+          ],
+          "label": 0,
+          "title": "Node-group"
+        }
+      ],
+      "title": "Middle",
+      "x": 0.5
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "title": "Final A",
+              "color": "#419c33"
+            },
+            {
+              "title": "Final B",
+              "color": "#873ac9"
+            },
+            {
+              "title": "Final C",
+              "color": "#d48728"
+            },
+            {
+              "title": "Final D",
+              "color": "#bf3821"
+            },
+            {
+              "title": "Final E",
+              "color": "#FE0805"
+            }
+          ],
+          "label": 1
+        }
+      ],
+      "title": "Day 90",
+      "x": 1.0
+    }
+  ]
+}

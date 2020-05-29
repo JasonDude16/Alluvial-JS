@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script src="pathSankey.js"></script>
+<link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+<script>
+d3.json("data.json", function(data) {
+  
+  var nominalWidth = 700;
+  var nominalHeight = 250;
+
+  var chart = d3.pathSankey()
+                .width(nominalWidth).height(nominalHeight)
+                .labelSpaceLeft(50).labelSpaceRight(100)
+
+  d3.select("body")
+  .append("svg")
+    .attr("width", nominalWidth)
+    .attr("height", nominalHeight)
+    .datum(data)
+    .call(chart);
+
+});
+</script>
+</body>
