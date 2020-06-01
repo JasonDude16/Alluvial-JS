@@ -5,39 +5,44 @@
       "path": [
         [0, 0, 1],
         [1, 0, 2],
-        [2, 0, 0]
+        [2, 0, 4],
+        [3, 0, 1]
       ]
     },
     {
       "magnitude": 5,
       "path": [
-        [0, 0, 3],
-        [1, 0, 4],
-        [2, 0, 2]
+        [0, 0, 0],
+        [1, 0, 2],
+        [2, 0, 0],
+        [3, 0, 3]
       ]
     },
     {
       "magnitude": 3,
       "path": [
         [0, 0, 1],
-        [1, 0, 2],
-        [2, 0, 1]
+        [1, 0, 0],
+        [2, 0, 3],
+        [3, 0, 0]
       ]
     },
     {
       "magnitude": 12,
       "path": [
         [0, 0, 4],
-        [1, 0, 1],
-        [2, 0, 3]
+        [1, 0, 0],
+        [2, 0, 1],
+        [3, 0, 1]
       ]
     },
     {
       "magnitude": 6,
       "path": [
         [0, 0, 2],
-        [1, 0, 1],
-        [2, 0, 3]
+        [1, 0, 4],
+        [2, 0, 3],
+        [3, 0, 2]
       ]
     },
     {
@@ -45,7 +50,8 @@
       "path": [
         [0, 0, 3],
         [1, 0, 1],
-        [2, 0, 2]
+        [2, 0, 2],
+        [3, 0, 3]
       ]
     },
     {
@@ -53,15 +59,26 @@
       "path": [
         [0, 0, 2],
         [1, 0, 1],
-        [2, 0, 3]
+        [2, 0, 3],
+        [3, 0, 4]
       ]
     },
     {
       "magnitude": 10,
       "path": [
         [0, 0, 3],
-        [1, 0, 1],
-        [2, 0, 1]
+        [1, 0, 2],
+        [2, 0, 1],
+        [3, 0, 2]
+      ]
+    },
+    {
+      "magnitude": 10,
+      "path": [
+        [0, 0, 4],
+        [1, 0, 3],
+        [2, 0, 3],
+        [3, 0, 2]
       ]
     }
   ],
@@ -102,31 +119,30 @@
         {
           "items": [
             {
-              "title": "Middle A",
+              "title": "Second A",
+              "color": "#2b84ad"
+            },
+            {
+              "title": "Second B",
               "color": "#419c33"
             },
             {
-              "title": "Middle B",
+              "title": "Second C",
               "color": "#873ac9"
             },
             {
-              "title": "Middle C",
+              "title": "Second D",
               "color": "#d48728"
             },
             {
-              "title": "Middle D",
-              "color": "#bf3821"
-            },
-            {
-              "title": "Middle E",
+              "title": "Second E",
               "color": "#bf3821"
             }
           ],
-          "label": 0,
-          "title": "Node-group"
+          "label": 0
         }
       ],
-      "title": "Middle",
+      "title": "24Hr",
       "x": 0.5
     },
     {
@@ -134,31 +150,62 @@
         {
           "items": [
             {
-              "title": "Final A",
+              "title": "Third A",
+              "color": "#2b84ad"
+            },
+            {
+              "title": "Third B",
               "color": "#419c33"
             },
             {
-              "title": "Final B",
+              "title": "Third C",
               "color": "#873ac9"
             },
             {
-              "title": "Final C",
+              "title": "Third D",
               "color": "#d48728"
             },
             {
-              "title": "Final D",
+              "title": "Third E",
               "color": "#bf3821"
-            },
-            {
-              "title": "Final E",
-              "color": "#FE0805"
             }
           ],
           "label": 1
         }
       ],
-      "title": "Day 90",
+      "title": "Day 7-10",
       "x": 1.0
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "title": "Final A",
+              "color": "#2b84ad"
+            },
+            {
+              "title": "Final B",
+              "color": "#419c33"
+            },
+            {
+              "title": "Final C",
+              "color": "#873ac9"
+            },
+            {
+              "title": "Final D",
+              "color": "#d48728"
+            },
+            {
+              "title": "Final E",
+              "color": "#bf3821"
+            }
+          ],
+          "label": 2
+        }
+      ],
+      "title": "Day 90",
+      "x": 1.5
     }
   ]
 }

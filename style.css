@@ -9,17 +9,20 @@ rect.node-group {
 .flow {
   fill: #000;
   fill-opacity: .2;;
+
 }
 .node-group-label path {
   fill: none;
   stroke-width: 3px;
   stroke: #777;
+
 }
 .node-group-label text {
   font-size: 12px;
   font-weight: 600;
   cursor: default;
 }
+
 .layer-label {
   font-size: 14px;
   font-weight: 600;
@@ -29,6 +32,7 @@ rect.node-group {
 body {
   font-family: sans-serif;
 }
+
 input {
   margin: 3px 3px;
   padding: 5px;

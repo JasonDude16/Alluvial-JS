@@ -1,28 +1,41 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
-<script src="pathSankey.js"></script>
-<link rel="stylesheet" href="style.css"> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="pathSankey.js"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<script>
-d3.json("data.json", function(data) {
-  
-  var nominalWidth = 700;
-  var nominalHeight = 250;
+  <script>
+    d3.json("data.json", function (data) {
+      
+      var arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]; 
 
-  var chart = d3.pathSankey()
-                .width(nominalWidth).height(nominalHeight)
-                .labelSpaceLeft(50).labelSpaceRight(100)
+      var nominalWidth = 700;
+      var nominalHeight = 250;
 
-  d3.select("body")
-  .append("svg")
-    .attr("width", nominalWidth)
-    .attr("height", nominalHeight)
-    .datum(data)
-    .call(chart);
+      var chart = d3
+        .pathSankey()
+        .width(nominalWidth)
+        .height(nominalHeight)
+        .labelSpaceLeft(50)
+        .labelSpaceRight(250);
 
-});
-</script>
+      var svg = d3
+        .select("body")
+        .append("svg")
+        .attr("width", nominalWidth)
+        .attr("height", nominalHeight)
+        .datum(data)
+        .call(chart);
+
+      svg
+        .selectAll("rect.node")
+        .append("title")
+        .data(arr)
+        .text((d) => d);
+
+    });
+
+  </script>
 </body>
