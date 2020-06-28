@@ -5,6 +5,7 @@ d3.pathSankey = function() {
   string has newline character \n
   Based on http://bl.ocks.org/mbostock/7555321
   */
+ 
   function linebreak(text) {
     text.each(function() {
       var text = d3.select(this),
@@ -32,7 +33,7 @@ d3.pathSankey = function() {
 
   var width, height; // total width including padding
   var onNodeSelected, onNodeDeselected; // callbacks
-  var labelspace = {top:50,left:30,right:30,bottom:0}; // padding around actual sankey
+  var labelspace = {top:0,left:0,right:0,bottom:50}; // padding around actual sankey
   var selectedNodeAddress = null;
 
   var nodeYSpacing = 3,
@@ -40,7 +41,7 @@ d3.pathSankey = function() {
 
   var nodeGroupYPadding = 10;
 
-  var nodeWidth = 30;
+  var nodeWidth = 25;
 
   var groupLabelDistance = 5;
   var flowStartWidth = 20; // flows go horizontally for this distance before curving
@@ -250,7 +251,7 @@ d3.pathSankey = function() {
 
       // layer label positioning functions
       layerLabelx = function(d){return labelspace.left+d.x*(availableWidth-nodeWidth)+0.5*nodeWidth;};
-      layerLabely = function(d){return 0.5*labelspace.top;};
+      layerLabely = function(d){return 5.2*labelspace.bottom;};
       nodeLayers.enter()
                   .append("g").classed("node-layer",true)
                   .append("text")

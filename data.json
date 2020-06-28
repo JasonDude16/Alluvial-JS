@@ -1,7 +1,7 @@
 {
   "flows": [
     {
-      "magnitude": 10,
+      "magnitude": 15,
       "path": [
         [0, 0, 1],
         [1, 0, 2],
@@ -10,7 +10,7 @@
       ]
     },
     {
-      "magnitude": 5,
+      "magnitude": 10,
       "path": [
         [0, 0, 0],
         [1, 0, 2],
@@ -42,7 +42,7 @@
         [0, 0, 2],
         [1, 0, 4],
         [2, 0, 3],
-        [3, 0, 2]
+        [3, 0, 0]
       ]
     },
     {
@@ -89,7 +89,7 @@
           "items": [
             {
               "title": "Start A",
-              "color": "#2b84ad"
+              "color": "#5387c2"
             },
             {
               "title": "Start B",
@@ -120,7 +120,7 @@
           "items": [
             {
               "title": "Second A",
-              "color": "#2b84ad"
+              "color": "#5387c2"
             },
             {
               "title": "Second B",
@@ -151,7 +151,7 @@
           "items": [
             {
               "title": "Third A",
-              "color": "#2b84ad"
+              "color": "#5387c2"
             },
             {
               "title": "Third B",
@@ -182,7 +182,7 @@
           "items": [
             {
               "title": "Final A",
-              "color": "#2b84ad"
+              "color": "#5387c2"
             },
             {
               "title": "Final B",

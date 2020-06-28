@@ -12,18 +12,19 @@
       var arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]; 
 
       var nominalWidth = 700;
-      var nominalHeight = 250;
+      var nominalHeight = 300;
 
       var chart = d3
         .pathSankey()
         .width(nominalWidth)
         .height(nominalHeight)
-        .labelSpaceLeft(50)
-        .labelSpaceRight(250);
+        .labelSpaceLeft(30)
+        .labelSpaceRight(240);
 
       var svg = d3
         .select("body")
         .append("svg")
+        .style("opacity", 0.9)
         .attr("width", nominalWidth)
         .attr("height", nominalHeight)
         .datum(data)
@@ -33,7 +34,7 @@
         .selectAll("rect.node")
         .append("title")
         .data(arr)
-        .text((d) => d);
+        .text((d) => d + " (Count)");
 
     });
 
